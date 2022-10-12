@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container" >
+
+    <h1>
+        Formulário de avaliação da compra
+    </h1>
+    <form action="" class="first-form">
+        <fieldset>
+            <legend>Identificação</legend>
+            <br>
+            <label for="nome">
+                Nome:
+            </label>
+            <input type="text" id="nome" value="" autofocus>
+            <br><br>
+            <label for="email">
+                Email*:
+            </label>
+            <input type="email" id="email" value="" autocomplete="email" required>
+            <br><br>
+            <label for="tel">
+                Telefone:
+            </label>
+            <input type="text" id="tel" value="" inputmode="numeric">
+            <br><br>
+            <label for="data">
+                Data de nascimento:
+            </label>
+            <input type="date" id="data" value="">
+            <br><br>
+            <label for="nf">
+                Nota fiscal:
+            </label>
+            <input type="file" id="nf" value="">
+            <br><br>
+            <label for="senha">
+                Senha:
+            </label>
+            <input type="password" id="senha" value="">
+            <br><br>
+        </fieldset>
+        <fieldset>
+            <legend>
+                Avaliação
+            </legend>
+            <br>
+            <label for="classif">
+                Classificação:
+            </label>
+            <input 
+                type="text" 
+                id="classif" 
+                list="avaliacao" 
+                placeholder="Escolha a classificação"
+            >
+            <datalist id="avaliacao">
+                <option>Excelente</option>
+                <option>Bom</option>
+                <option>Regular</option>
+                <option>Ruim</option>
+            </datalist>
+            <br>
+            <br>
+            <label for="nota">
+                Nota:
+            </label>
+            <select name="nota" id="nota" > 
+                <!-- caso queira selecionar mais de um: multiple -->
+                <option value="">Selecione a nota</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+            <br>
+            <br>
+            <label for="atendimento">
+                Atendimento:
+            </label>
+            <input type="range" min="0" max="100" step="1" value="0">
+            <br>
+            <br>
+            <label for="agilidade">
+                Agilidade:
+            </label>
+            <input type="range" min="0" max="100" step="1"value="0">
+            <br>
+            <br>
+            <label for="simpatia">
+                Simpatia:
+            </label>
+            <input type="range" min="0" max="100" step="1"value="0">
+            <br>
+            <br>
+            <label for="comment">
+                Comentário:
+            </label>
+            <textarea 
+                name="" 
+                id="comment" 
+                cols="100" 
+                rows="3"
+                wrap="soft"
+            ></textarea>
+            <br><br>
+        </fieldset>
+        <label for="subscribe">
+            Desejo receber promoções por email</label>
+        <input 
+        class="check"
+            type="checkbox" 
+            checked
+        >    
+    </form>
+    <br>
+    <button 
+        type="submit" 
+        autofocus>
+            Enviar
+    </button>
+    <br>
+    <br>
+    <button type="reset">
+        Limpar tudo
+    </button>
+</div>
+
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+h1 {
+    color: blue;
+    font-family: 'Josefin Sans', cursive;
+    }
+
+strong {
+    color: red;
+    }
+
+#my-title{
+    color: rgb(29, 167, 11);
+}
+
+.title{
+    color: rgb(167, 11, 159);
+}
+
+.gustavo{
+    background-color: #f5f5;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    width: 100%;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
