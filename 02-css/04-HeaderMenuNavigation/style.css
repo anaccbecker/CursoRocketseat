@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+}
+
+
+header {
+    padding: 2rem;
+    border: lightgray solid;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    border: lightgray solid
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    gap: .8rem;
+    align-items: center;
+    border: lightgray dashed;
+}
+
+ul li:last-child {
+    background: blue;
+    color: white;
+    padding:.8rem;
+    border-radius:.8rem;
+    border: lightblue solid;
+}
+
